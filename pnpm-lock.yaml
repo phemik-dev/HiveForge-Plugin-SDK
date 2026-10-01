@@ -62,9 +62,6 @@ importers:
       hiveforge-plugin-work-fact:
         specifier: workspace:*
         version: link:../plugin-work-fact
-      zod:
-        specifier: ^4.4.3
-        version: 4.6.5
 
   packages/plugin-transform:
     dependencies:
