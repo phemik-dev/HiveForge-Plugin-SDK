@@ -1,0 +1,14 @@
+{
+  "name": "@hiveforge-ai/dsh-plugin-work-fact",
+  "version": "0.1.1-rc.2",
+  "description": "Harness-neutral durable plugin work-fact store and projection fold",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": { ".": { "types": "./lib/index.d.ts", "default": "./lib/index.js" }, "./package.json": "./package.json" },
+  "files": ["lib", "README.md", "LICENSE"],
+  "license": "MIT",
+  "publishConfig": { "access": "public" },
+  "repository": { "type": "git", "url": "git+https://github.com/phemik-dev/HiveForge-Plugin-SDK.git", "directory": "packages/plugin-work-fact" },
+  "dependencies": { "@hiveforge-ai/dsh-plugin-contract": "workspace:*" }
+}

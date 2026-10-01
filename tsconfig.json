@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/plugin-contract" },
+    { "path": "./packages/plugin-host" },
+    { "path": "./packages/plugin-work-fact" },
+    { "path": "./packages/plugin-transport-file" },
+    { "path": "./packages/plugin-transform" }
+  ]
+}
