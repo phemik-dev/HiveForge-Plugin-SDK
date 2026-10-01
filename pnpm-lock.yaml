@@ -8,24 +8,24 @@ importers:
 
   .:
     devDependencies:
-      'hiveforge-plugin-contract':
-        specifier: workspace:*
-        version: link:packages/plugin-contract
-      'hiveforge-plugin-example-transform':
-        specifier: workspace:*
-        version: link:packages/plugin-transform
-      'hiveforge-plugin-host':
-        specifier: workspace:*
-        version: link:packages/plugin-host
-      'hiveforge-plugin-transport-file':
-        specifier: workspace:*
-        version: link:packages/plugin-transport-file
-      'hiveforge-plugin-work-fact':
-        specifier: workspace:*
-        version: link:packages/plugin-work-fact
       '@types/node':
         specifier: ^22.20.0
         version: 22.20.4
+      hiveforge-plugin-contract:
+        specifier: workspace:*
+        version: link:packages/plugin-contract
+      hiveforge-plugin-example-transform:
+        specifier: workspace:*
+        version: link:packages/plugin-transform
+      hiveforge-plugin-host:
+        specifier: workspace:*
+        version: link:packages/plugin-host
+      hiveforge-plugin-transport-file:
+        specifier: workspace:*
+        version: link:packages/plugin-transport-file
+      hiveforge-plugin-work-fact:
+        specifier: workspace:*
+        version: link:packages/plugin-work-fact
       oxlint:
         specifier: ^1.76.0
         version: 1.86.0
@@ -44,46 +44,46 @@ importers:
 
   packages/plugin-host:
     dependencies:
-      'hiveforge-plugin-contract':
+      hiveforge-plugin-contract:
         specifier: workspace:*
         version: link:../plugin-contract
 
   packages/plugin-sdk:
     dependencies:
-      'hiveforge-plugin-contract':
+      hiveforge-plugin-contract:
         specifier: workspace:*
         version: link:../plugin-contract
-      'hiveforge-plugin-host':
+      hiveforge-plugin-host:
         specifier: workspace:*
         version: link:../plugin-host
-      'hiveforge-plugin-transport-file':
+      hiveforge-plugin-transport-file:
         specifier: workspace:*
         version: link:../plugin-transport-file
-      'hiveforge-plugin-work-fact':
+      hiveforge-plugin-work-fact:
         specifier: workspace:*
         version: link:../plugin-work-fact
 
   packages/plugin-transform:
     dependencies:
-      'hiveforge-plugin-contract':
+      hiveforge-plugin-contract:
         specifier: workspace:*
         version: link:../plugin-contract
-      'hiveforge-plugin-host':
+      hiveforge-plugin-host:
         specifier: workspace:*
         version: link:../plugin-host
-      'hiveforge-plugin-transport-file':
+      hiveforge-plugin-transport-file:
         specifier: workspace:*
         version: link:../plugin-transport-file
 
   packages/plugin-transport-file:
     dependencies:
-      'hiveforge-plugin-contract':
+      hiveforge-plugin-contract:
         specifier: workspace:*
         version: link:../plugin-contract
 
   packages/plugin-work-fact:
     dependencies:
-      'hiveforge-plugin-contract':
+      hiveforge-plugin-contract:
         specifier: workspace:*
         version: link:../plugin-contract
 
