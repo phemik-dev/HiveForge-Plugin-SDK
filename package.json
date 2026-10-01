@@ -1,0 +1,30 @@
+{
+  "name": "hiveforge-plugin-sdk",
+  "version": "0.1.0-recon.1",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.7.0",
+  "engines": { "node": "^22.19.0 || >=24.0.0" },
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run",
+    "typecheck": "tsc -b --pretty false",
+    "lint": "oxlint packages --deny-warnings",
+    "check": "pnpm run typecheck && pnpm run test && pnpm run lint",
+    "pack:all": "node scripts/pack.mjs",
+    "publish:next": "node scripts/publish-next.mjs",
+    "publish:next:dry-run": "node scripts/publish-next.mjs --dry-run"
+  },
+  "devDependencies": {
+    "hiveforge-plugin-contract": "workspace:*",
+    "hiveforge-plugin-host": "workspace:*",
+    "hiveforge-plugin-work-fact": "workspace:*",
+    "hiveforge-plugin-transport-file": "workspace:*",
+    "hiveforge-plugin-example-transform": "workspace:*",
+    "@types/node": "^22.20.0",
+    "oxlint": "^1.76.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.8"
+  }
+}
