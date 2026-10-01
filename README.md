@@ -38,6 +38,12 @@ Install the reference plugin separately when needed:
 npm install hiveforge-plugin-example-transform@next
 ```
 
+Until the npm prerelease is published, use the public GitHub release installer:
+
+```powershell
+& ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/phemik-dev/HiveForge-Plugin-SDK/main/scripts/install-release.ps1)))
+```
+
 ## Development
 
 ```powershell

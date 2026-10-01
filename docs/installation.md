@@ -12,15 +12,33 @@ The umbrella package exports the contract, host registry, durable work-fact stor
 npm install hiveforge-plugin-example-transform@next
 ```
 
+## Public GitHub prerelease
+
+Until npm publication completes, install the public release with one reviewed installer command.
+
+PowerShell:
+
+```powershell
+& ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/phemik-dev/HiveForge-Plugin-SDK/main/scripts/install-release.ps1)))
+```
+
+macOS or Linux:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/phemik-dev/HiveForge-Plugin-SDK/main/scripts/install-release.sh | sh
+```
+
+Both scripts install the six checksum-published tarballs from `v0.1.1-rc.2`. Review the scripts before piping them into a shell when required by local security policy.
+
 ## Local tarball installation
 
-Before registry publication, or for an air-gapped installation:
+For an air-gapped installation:
 
 ```powershell
 pnpm install --frozen-lockfile --ignore-scripts
 pnpm run check
 pnpm run pack:all
-npm install .\dist\hiveforge-plugin-sdk-0.1.1-rc.2.tgz
+npm install (Get-ChildItem .\dist\*.tgz | Select-Object -ExpandProperty FullName)
 ```
 
 ## Harness integration
