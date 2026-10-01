@@ -1,5 +1,5 @@
 /** Harness-neutral durable store for portable plugin work envelopes. */
-import { pluginWorkEnvelopeSchema, type PluginWorkEnvelope } from '@hiveforge-ai/dsh-plugin-contract'
+import { pluginWorkEnvelopeSchema, type PluginWorkEnvelope } from 'hiveforge-plugin-contract'
 
 export interface PluginWorkEvent {
   type: 'plugin/work-fact'

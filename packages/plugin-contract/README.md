@@ -1,4 +1,4 @@
-# @hiveforge-ai/dsh-plugin-contract
+# hiveforge-plugin-contract
 
 English | [中文](README.zh.md)
 

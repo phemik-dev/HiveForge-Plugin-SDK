@@ -6,12 +6,12 @@ A versioned, capability-aware, headless-compatible protocol and host architectur
 
 | Package | Role |
 |---|---|
-| `@hiveforge-ai/dsh-plugin-sdk` | One-package SDK entry point |
-| `@hiveforge-ai/dsh-plugin-contract` | Strict manifest, evidence, work-fact, and cross-host envelope schemas |
-| `@hiveforge-ai/dsh-plugin-host` | Headless registration, capability ceiling, admission, unmount, and remount |
-| `@hiveforge-ai/dsh-plugin-work-fact` | Harness-neutral durable event store and multi-plugin projection fold |
-| `@hiveforge-ai/dsh-plugin-transport-file` | Atomic-file producer/consumer transport |
-| `@hiveforge-ai/dsh-plugin-example-transform` | Independent deterministic reference plugin |
+| `hiveforge-plugin-sdk` | One-package SDK entry point |
+| `hiveforge-plugin-contract` | Strict manifest, evidence, work-fact, and cross-host envelope schemas |
+| `hiveforge-plugin-host` | Headless registration, capability ceiling, admission, unmount, and remount |
+| `hiveforge-plugin-work-fact` | Harness-neutral durable event store and multi-plugin projection fold |
+| `hiveforge-plugin-transport-file` | Atomic-file producer/consumer transport |
+| `hiveforge-plugin-example-transform` | Independent deterministic reference plugin |
 
 ## Generic path
 
@@ -29,13 +29,13 @@ HiveComb is a domain integration using this path; it is not part of the generic 
 ## Install
 
 ```bash
-npm install @hiveforge-ai/dsh-plugin-sdk@next
+npm install hiveforge-plugin-sdk@next
 ```
 
 Install the reference plugin separately when needed:
 
 ```bash
-npm install @hiveforge-ai/dsh-plugin-example-transform@next
+npm install hiveforge-plugin-example-transform@next
 ```
 
 ## Development
@@ -48,6 +48,6 @@ pnpm run pack:all
 
 ## Distribution status
 
-This repository is a prerelease consolidation. Packages are configured for packing but have not been published to npm. The `@hiveforge-ai` scope requires publisher authorization before public release.
+This repository is a prerelease consolidation. Packages are configured for public npm publication under unscoped `hiveforge-plugin-*` names; npm account authentication is the only remaining registry prerequisite.
 
-See [`docs/architecture.md`](docs/architecture.md), [`docs/installation.md`](docs/installation.md), and [`docs/provenance.md`](docs/provenance.md).
+See [`docs/architecture.md`](docs/architecture.md), [`docs/installation.md`](docs/installation.md), [`docs/publishing.md`](docs/publishing.md), and [`docs/provenance.md`](docs/provenance.md).

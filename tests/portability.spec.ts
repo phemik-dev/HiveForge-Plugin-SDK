@@ -2,10 +2,10 @@ import { mkdtemp, rm } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { afterEach, describe, expect, it } from 'vitest'
-import { PluginHostRegistry } from '@hiveforge-ai/dsh-plugin-host'
-import { PluginWorkFactStore, foldPluginWorkFacts, type PluginWorkEvent } from '@hiveforge-ai/dsh-plugin-work-fact'
-import { PluginEnvelopeFileTransport } from '@hiveforge-ai/dsh-plugin-transport-file'
-import { mountTransform, writeTransformWorkFact } from '@hiveforge-ai/dsh-plugin-example-transform'
+import { PluginHostRegistry } from 'hiveforge-plugin-host'
+import { PluginWorkFactStore, foldPluginWorkFacts, type PluginWorkEvent } from 'hiveforge-plugin-work-fact'
+import { PluginEnvelopeFileTransport } from 'hiveforge-plugin-transport-file'
+import { mountTransform, writeTransformWorkFact } from 'hiveforge-plugin-example-transform'
 
 const roots: string[] = []
 afterEach(async () => { await Promise.all(roots.splice(0).map(root => rm(root, { recursive: true, force: true }))) })

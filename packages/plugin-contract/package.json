@@ -1,5 +1,5 @@
 {
-  "name": "@hiveforge-ai/dsh-plugin-contract",
+  "name": "hiveforge-plugin-contract",
   "version": "0.1.1-rc.2-recon0041.3",
   "description": "Portable HiveForge plugin manifest and work-fact schemas",
   "type": "module",

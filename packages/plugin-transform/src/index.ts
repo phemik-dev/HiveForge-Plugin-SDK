@@ -1,9 +1,9 @@
 /** Deterministic independent reference plugin using generic host admission. */
 import { createHash } from 'node:crypto'
-import { writePluginEnvelope } from '@hiveforge-ai/dsh-plugin-transport-file'
-import { pluginWorkEnvelopeSchema, workFactSchema } from '@hiveforge-ai/dsh-plugin-contract'
-import type { PluginWorkEnvelope, PluginWorkFact } from '@hiveforge-ai/dsh-plugin-contract'
-import { PluginHostRegistry } from '@hiveforge-ai/dsh-plugin-host'
+import { writePluginEnvelope } from 'hiveforge-plugin-transport-file'
+import { pluginWorkEnvelopeSchema, workFactSchema } from 'hiveforge-plugin-contract'
+import type { PluginWorkEnvelope, PluginWorkFact } from 'hiveforge-plugin-contract'
+import { PluginHostRegistry } from 'hiveforge-plugin-host'
 
 /** Plugin #2's standard manifest: it requests no ambient execution capability. */
 export const transformManifest = {

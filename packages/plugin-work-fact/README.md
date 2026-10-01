@@ -1,4 +1,4 @@
-# @hiveforge-ai/dsh-plugin-work-fact
+# hiveforge-plugin-work-fact
 
 Harness-neutral durable storage logic for validated plugin work envelopes. It preflights Session binding and revision order, appends `plugin/work-fact`, folds the latest fact for every `(pluginId, workId)` identity, and treats exact replay idempotently.
 

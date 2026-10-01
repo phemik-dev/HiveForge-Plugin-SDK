@@ -1,11 +1,11 @@
-export * from '@hiveforge-ai/dsh-plugin-contract'
-export { PluginHostRegistry } from '@hiveforge-ai/dsh-plugin-host'
-export type { PluginWorkProjection as HostPluginWorkProjection } from '@hiveforge-ai/dsh-plugin-host'
-export { PluginWorkFactStore, foldPluginWorkFacts } from '@hiveforge-ai/dsh-plugin-work-fact'
+export * from 'hiveforge-plugin-contract'
+export { PluginHostRegistry } from 'hiveforge-plugin-host'
+export type { PluginWorkProjection as HostPluginWorkProjection } from 'hiveforge-plugin-host'
+export { PluginWorkFactStore, foldPluginWorkFacts } from 'hiveforge-plugin-work-fact'
 export type {
   PluginSessionSink,
   PluginWorkEvent,
   PluginWorkProjection as SessionPluginWorkProjection,
-} from '@hiveforge-ai/dsh-plugin-work-fact'
-export { PluginEnvelopeFileTransport, writePluginEnvelope } from '@hiveforge-ai/dsh-plugin-transport-file'
-export type { PluginEnvelopeSink, PluginFileTransportOptions } from '@hiveforge-ai/dsh-plugin-transport-file'
+} from 'hiveforge-plugin-work-fact'
+export { PluginEnvelopeFileTransport, writePluginEnvelope } from 'hiveforge-plugin-transport-file'
+export type { PluginEnvelopeSink, PluginFileTransportOptions } from 'hiveforge-plugin-transport-file'

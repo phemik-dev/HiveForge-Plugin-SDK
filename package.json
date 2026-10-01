@@ -17,11 +17,11 @@
     "publish:next:dry-run": "node scripts/publish-next.mjs --dry-run"
   },
   "devDependencies": {
-    "@hiveforge-ai/dsh-plugin-contract": "workspace:*",
-    "@hiveforge-ai/dsh-plugin-host": "workspace:*",
-    "@hiveforge-ai/dsh-plugin-work-fact": "workspace:*",
-    "@hiveforge-ai/dsh-plugin-transport-file": "workspace:*",
-    "@hiveforge-ai/dsh-plugin-example-transform": "workspace:*",
+    "hiveforge-plugin-contract": "workspace:*",
+    "hiveforge-plugin-host": "workspace:*",
+    "hiveforge-plugin-work-fact": "workspace:*",
+    "hiveforge-plugin-transport-file": "workspace:*",
+    "hiveforge-plugin-example-transform": "workspace:*",
     "@types/node": "^22.20.0",
     "oxlint": "^1.76.0",
     "typescript": "^6.0.3",

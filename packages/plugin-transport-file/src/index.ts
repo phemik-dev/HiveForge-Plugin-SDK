@@ -2,7 +2,7 @@
 import { randomBytes } from 'node:crypto'
 import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises'
 import { dirname } from 'node:path'
-import { pluginWorkEnvelopeSchema, type PluginWorkEnvelope } from '@hiveforge-ai/dsh-plugin-contract'
+import { pluginWorkEnvelopeSchema, type PluginWorkEnvelope } from 'hiveforge-plugin-contract'
 
 export interface PluginEnvelopeSink<T> {
   record(input: PluginWorkEnvelope): T

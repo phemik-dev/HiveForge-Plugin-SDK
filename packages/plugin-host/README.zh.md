@@ -1,4 +1,4 @@
-# @hiveforge-ai/dsh-plugin-host
+# hiveforge-plugin-host
 
 [English](README.md) | 中文
 

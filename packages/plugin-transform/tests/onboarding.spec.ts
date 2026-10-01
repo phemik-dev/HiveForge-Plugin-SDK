@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto'
 import { describe, expect, it } from 'vitest'
-import { PluginHostRegistry } from '@hiveforge-ai/dsh-plugin-host'
+import { PluginHostRegistry } from 'hiveforge-plugin-host'
 import { mountTransform, transformReceipt, transformWorkFact } from '../src/index.ts'
 
 describe('transform.text reference plugin', () => {

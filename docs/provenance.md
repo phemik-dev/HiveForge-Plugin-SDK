@@ -32,4 +32,4 @@ The original integration branches remain consumer evidence. This repository beco
 
 ## Contract artifact
 
-The final local prerelease used in portability proof was `@hiveforge-ai/dsh-plugin-contract@0.1.1-rc.2-recon0041.3`, SHA-256 `2b5e5d713644dfee71f225ea1a7da35d40ca93d0df7e41f42284fd2eba6e8a1d`.
+The final integration-repository prerelease used in portability proof was `@hiveforge-ai/dsh-plugin-contract@0.1.1-rc.2-recon0041.3`, SHA-256 `2b5e5d713644dfee71f225ea1a7da35d40ca93d0df7e41f42284fd2eba6e8a1d`. The standalone repository publishes the equivalent package as `hiveforge-plugin-contract` to avoid requiring ownership of an npm organization scope.

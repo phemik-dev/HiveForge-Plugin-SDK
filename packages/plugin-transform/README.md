@@ -1,4 +1,4 @@
-# @hiveforge-ai/dsh-example-plugin-transform
+# hiveforge-plugin-example-transform
 
 English | [中文](README.zh.md)
 

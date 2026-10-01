@@ -7,7 +7,7 @@ import {
   type PluginManifest,
   type PluginWorkEnvelope,
   type PluginWorkFact,
-} from '@hiveforge-ai/dsh-plugin-contract'
+} from 'hiveforge-plugin-contract'
 
 /** Validated facts grouped by admitted plugin and work identity. */
 export type PluginWorkProjection = ReadonlyMap<string, ReadonlyMap<string, PluginWorkFact>>
