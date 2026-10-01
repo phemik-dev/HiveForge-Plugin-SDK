@@ -6,6 +6,7 @@ A versioned, capability-aware, headless-compatible protocol and host architectur
 
 | Package | Role |
 |---|---|
+| `@hiveforge-ai/dsh-plugin-sdk` | One-package SDK entry point |
 | `@hiveforge-ai/dsh-plugin-contract` | Strict manifest, evidence, work-fact, and cross-host envelope schemas |
 | `@hiveforge-ai/dsh-plugin-host` | Headless registration, capability ceiling, admission, unmount, and remount |
 | `@hiveforge-ai/dsh-plugin-work-fact` | Harness-neutral durable event store and multi-plugin projection fold |
@@ -25,11 +26,24 @@ plugin
 
 HiveComb is a domain integration using this path; it is not part of the generic SDK core.
 
+## Install
+
+```bash
+npm install @hiveforge-ai/dsh-plugin-sdk@next
+```
+
+Install the reference plugin separately when needed:
+
+```bash
+npm install @hiveforge-ai/dsh-plugin-example-transform@next
+```
+
 ## Development
 
 ```powershell
 pnpm install
 pnpm run check
+pnpm run pack:all
 ```
 
 ## Distribution status

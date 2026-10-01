@@ -1,0 +1,19 @@
+{
+  "name": "@hiveforge-ai/dsh-plugin-sdk",
+  "version": "0.1.1-rc.2",
+  "description": "Installable umbrella package for the HiveForge Plugin SDK",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": { ".": { "types": "./lib/index.d.ts", "default": "./lib/index.js" }, "./package.json": "./package.json" },
+  "files": ["lib", "README.md", "LICENSE"],
+  "license": "MIT",
+  "publishConfig": { "access": "public", "tag": "next" },
+  "repository": { "type": "git", "url": "git+https://github.com/phemik-dev/HiveForge-Plugin-SDK.git", "directory": "packages/plugin-sdk" },
+  "dependencies": {
+    "@hiveforge-ai/dsh-plugin-contract": "workspace:*",
+    "@hiveforge-ai/dsh-plugin-host": "workspace:*",
+    "@hiveforge-ai/dsh-plugin-work-fact": "workspace:*",
+    "@hiveforge-ai/dsh-plugin-transport-file": "workspace:*"
+  }
+}

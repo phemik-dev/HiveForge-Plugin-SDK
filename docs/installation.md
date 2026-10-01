@@ -1,21 +1,30 @@
 # Installation
 
-## Current local prerelease
+## Prerelease registry installation
 
-```powershell
-pnpm add C:\path\to\hiveforge-ai-dsh-plugin-contract-0.1.1-rc.2-recon0041.3.tgz
+```bash
+npm install @hiveforge-ai/dsh-plugin-sdk@next
 ```
 
-The remaining SDK packages can be packed from this monorepo:
+The umbrella package exports the contract, host registry, durable work-fact store, and atomic-file transport. The reference plugin is optional:
+
+```bash
+npm install @hiveforge-ai/dsh-plugin-example-transform@next
+```
+
+## Local tarball installation
+
+Before registry publication, or for an air-gapped installation:
 
 ```powershell
-pnpm install
+pnpm install --frozen-lockfile --ignore-scripts
 pnpm run check
-pnpm -r pack
+pnpm run pack:all
+npm install .\dist\hiveforge-ai-dsh-plugin-sdk-0.1.1-rc.2.tgz
 ```
 
 ## Harness integration
 
-A headless host typically installs `plugin-contract`, `plugin-host`, and one transport. A Session-capable Harness additionally adapts `PluginWorkFactStore` to its Session append and projection services. UI is optional.
+A headless host imports `PluginHostRegistry` from the SDK and mounts plugin manifests. A Session-capable Harness adapts `PluginWorkFactStore` to its own append/persistence service. UI is optional and remains a consumer of the generic projection.
 
-The packages are not published to npm yet. Public installation under `@hiveforge-ai` requires authorization for that npm organization.
+Public publication under `@hiveforge-ai` requires npm organization authorization. Until that access exists, the tarballs in `dist/` are the installable release artifacts.

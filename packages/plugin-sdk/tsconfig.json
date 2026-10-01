@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "rootDir": "src", "outDir": "lib" },
+  "include": ["src"],
+  "references": [
+    { "path": "../plugin-contract" },
+    { "path": "../plugin-host" },
+    { "path": "../plugin-work-fact" },
+    { "path": "../plugin-transport-file" }
+  ]
+}

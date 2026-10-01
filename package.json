@@ -12,7 +12,9 @@
     "typecheck": "tsc -b --pretty false",
     "lint": "oxlint packages --deny-warnings",
     "check": "pnpm run typecheck && pnpm run test && pnpm run lint",
-    "pack:all": "pnpm -r --if-present pack"
+    "pack:all": "node scripts/pack.mjs",
+    "publish:next": "node scripts/publish-next.mjs",
+    "publish:next:dry-run": "node scripts/publish-next.mjs --dry-run"
   },
   "devDependencies": {
     "@hiveforge-ai/dsh-plugin-contract": "workspace:*",

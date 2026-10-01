@@ -48,6 +48,21 @@ importers:
         specifier: workspace:*
         version: link:../plugin-contract
 
+  packages/plugin-sdk:
+    dependencies:
+      '@hiveforge-ai/dsh-plugin-contract':
+        specifier: workspace:*
+        version: link:../plugin-contract
+      '@hiveforge-ai/dsh-plugin-host':
+        specifier: workspace:*
+        version: link:../plugin-host
+      '@hiveforge-ai/dsh-plugin-transport-file':
+        specifier: workspace:*
+        version: link:../plugin-transport-file
+      '@hiveforge-ai/dsh-plugin-work-fact':
+        specifier: workspace:*
+        version: link:../plugin-work-fact
+
   packages/plugin-transform:
     dependencies:
       '@hiveforge-ai/dsh-plugin-contract':
