@@ -1,5 +1,5 @@
 {
-  "name": "hiveforge-plugin-sdk",
+  "name": "hiveforge-plugin-sdk-monorepo",
   "version": "0.1.0-recon.1",
   "private": true,
   "type": "module",
